@@ -3,9 +3,397 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | Mahadheva</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="main" id ="home">
+        <nav>
+            <a href="#home" class="logo">Portfolio</a>
+            <div class="nav-icons">
+               <button> <a href="#home" >Home</a> </button>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="text">            
+
+                <div class = "name"><h1>Hello, I'm Mahadheva</h1></div>
+
+                <div class="intro">
+                    <h3>
+                        EEE Student | DGCA-Certified Remote Pilot |
+                        MATLAB & Simulink | Aspiring Full-Stack Developer
+                    </h3>
+                </div>
+                <div class = "description">
+                    <p>
+                        I'm a second-year Electrical and Electronics Engineering
+                        student at Sri Krishna College of Engineering and Technology,
+                        Coimbatore, with a CGPA of 9.05.
+                    </p>
+
+                    <p>
+                        I'm passionate about electrical engineering, particularly
+                        MATLAB/Simulink, electrical system simulations, and electric
+                        vehicle technologies. Alongside my core engineering interests,
+                        I'm actively developing my skills in full-stack development.
+                    </p>
+
+                    <p>
+                        As a DGCA-Certified Remote Pilot and a member of Team HOPLITES,
+                        I enjoy gaining hands-on experience, exploring new technologies,
+                        and applying engineering concepts to real-world challenges.
+                    </p>
+                </div>
+            </div> 
+                <div class="image">
+                    <img src="assets/images/images.jpg" alt="Profile Image">
+                </div>                       
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                I'm an Electrical and Electronics Engineering student at Sri Krishna College
+                of Engineering and Technology, Coimbatore, with a strong interest in
+                understanding how technology works and applying it to real-world problems
+            </p>
+            <p>
+                My passion lies in electrical engineering, particularly electrical machines,
+                MATLAB/Simulink, embedded systems, and electric vehicle technologies. 
+                I enjoy exploring concepts beyond textbooks through simulations, practical 
+                experiments, and hands-on projects.
+            </p>
+            <p>
+                Alongside my core engineering journey, I'm developing my programming and 
+                web development skills. I believe combining electrical engineering with 
+                software development opens up exciting opportunities to build innovative 
+                solutions.
+            </p>
+            <p>
+                My goal is to continuously improve my technical knowledge, gain practical
+                experience, and contribute to meaningful engineering projects.
+            </p>
+        </div>
+        <div class="box">
+            <div class="row-1">
+                <div class="program">
+                    <i data-lucide="code-xml"></i>
+                    <h3>Programming Skills</h3>
+                    <p>3+</p>
+                </div>
+
+                <div class="project">
+                    <i data-lucide="folder-kanban"></i>
+                    <h3>Projects</h3>
+                    <p>3+</p>
+                </div>
+            </div>
+
+            <div class="row-2">
+                <div class="certificate">
+                    <i data-lucide="award"></i>
+                    <h3>Certificates</h3>
+                    <p>5+</p>
+                </div>
+
+                <div class="interest">
+                    <i data-lucide="cpu"></i>
+                    <h3>Interests</h3>
+                    <p>Embedded,Fullstack,Electrical</p>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div class="skills" id="skills">
+        <div class = "skills-container">
+            <h2>Skills</h2>
+        </div>
+        <div class = "skills-collection">
+            <div class="core">
+                <h3>Core EEE</h3>
+                    <ul>
+                        <li>MATLAB/Simulink</li>
+                        <li>Electrical Machines</li>
+                        <li>Circuit Design</li>
+                        <li>Embedded Systems</li>
+                    </ul>
+            </div>
+            <div class="program-skills">
+                <h3>Programming Skills</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>C/C++</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="tools">
+                <h3>Tools</h3>
+                <ul>
+                    <li>MATLAB</li>
+                    <li>VS Code</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+
+<section class="projects" id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="projects-collection">
+
+        <!-- Project 1: Frontend -->
+        <div class="project-card">
+            <span data-lucide="code-xml"></span>
+
+            <p class="project-category">Frontend Development</p>
+            <h3>Netflix Clone</h3>
+
+            <p class="project-description">
+                Recreated the Netflix landing page
+                using HTML and CSS.
+            </p>
+
+            <div class="project-footer">
+                <p class="project-tech">HTML | CSS</p>
+                <span class="project-status completed">Completed</span>
+            </div>
+        </div>
+
+        <!-- Project 2: Backend -->
+        <div class="project-card">
+            <span data-lucide="database"></span>
+
+            <p class="project-category">Backend Development</p>
+            <h3>Campus Map Navigation</h3>
+
+            <p class="project-description">
+                Developing a campus navigation system
+                using Python and shortest-path algorithms.
+            </p>
+
+            <div class="project-footer">
+                <p class="project-tech">Python | JSON | Dijkstra</p>
+                <span class="project-status progress">In Progress</span>
+            </div>
+        </div>
+
+        <!-- Project 3: Simulation -->
+        <div class="project-card">
+            <span data-lucide="sun"></span>
+
+            <p class="project-category">MATLAB / Simulation</p>
+            <h3>HOPLITES Solar Simulation</h3>
+
+            <p class="project-description">
+                Simulated a solar PV system with MPPT
+                and DC-DC converter using MATLAB/Simulink.
+            </p>
+
+            <div class="project-footer">
+                <p class="project-tech">MATLAB | Simulink</p>
+                <span class="project-status completed">Completed</span>
+            </div>
+        </div>
+
+        <!-- Project 4: App Development -->
+        <div class="project-card">
+            <span data-lucide="smartphone"></span>
+
+            <p class="project-category">App Development</p>
+            <h3>Offline Rural Healthcare App</h3>
+
+            <p class="project-description">
+                Developed an offline-first healthcare
+                app prototype for rural communities.
+            </p>
+
+            <div class="project-footer">
+                <p class="project-tech">App Development | UI/UX</p>
+                <span class="project-status prototype">Prototype</span>
+            </div>
+        </div>
+
+        <!-- Project 5: Embedded Systems -->
+        <div class="project-card">
+            <span data-lucide="cpu"></span>
+
+            <p class="project-category">Embedded Systems</p>
+            <h3>Upcoming Embedded Project</h3>
+
+            <p class="project-description">
+                Embedded systems project to be announced.
+            </p>
+
+            <div class="project-footer">
+                <p class="project-tech">To Be Decided</p>
+                <span class="project-status planned">Planned</span>
+            </div>
+        </div>
+
+        <!-- Project 6: PCB Design -->
+        <div class="project-card">
+            <span data-lucide="circuit-board"></span>
+
+            <p class="project-category">PCB Design</p>
+            <h3>Upcoming PCB Project</h3>
+
+            <p class="project-description">
+                PCB design project to be announced.
+            </p>
+
+            <div class="project-footer">
+                <p class="project-tech">To Be Decided</p>
+                <span class="project-status planned">Planned</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="experience" id ="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-collection">
+
+        <!-- Experience 1: Team HOPLITES -->
+        <div class="experience-card">
+            <span data-lucide="users"></span>
+
+            <p class="experience-category">Team HOPLITES</p>
+            <h3>Member</h3>
+
+            <p class="experience-description">
+                Contributed to the development of a solar-powered
+                electric vehicle as part of the team.
+            </p>
+
+            <div class="experience-footer">
+                <p class="experience-duration present">2026 - Present</p>
+                <span class="experience-status active">Active</span>
+            </div>
+        </div>
+
+        <!-- Experience 2: DGCA-Certified Remote Pilot -->
+        <div class="experience-card">
+            <span data-lucide="plane"></span>
+
+            <p class="experience-category">DGCA-Certified Remote Pilot</p>
+            <h3>Certified Pilot</h3>
+
+            <p class="experience-description">
+                Successfully completed the DGCA certification
+                for remote piloting of drones.
+            </p>
+
+            <div class="experience-footer">
+                <p class="experience-duration completed">Completed</p>
+                <span class="experience-status certified">Certified</span>
+            </div>
+        </div>
+
+        <div class="experience-card">
+            <span data-lucide="cpu"></span>
+
+            <p class="experience-category">Embedded engineer</p>
+            <h3>Intern</h3>
+
+            <p class="experience-description">
+                Doing an internship in embedded systems.
+            </p>
+
+            <div class="experience-footer">
+                <p class="experience-duration present">2026 - Present</p>
+                <span class="experience-status active">Active</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p class="contact-subtitle">
+        Have a project or an idea? Let's connect!
+    </p>
+
+    <div class="contact-container">
+
+        <!-- Left: Contact Information -->
+        <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+                I'm open to internships, projects,
+                and collaboration opportunities.
+            </p>
+
+            <ul class="contact-links">
+                <li>
+                    <i data-lucide="mail"></i>
+                    <a href="mailto:yourmail@example.com">Email Me</a>
+                </li>
+
+                <li>
+                    <i data-lucide="linkedin"></i>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </li>
+
+                <li>
+                    <i data-lucide="github"></i>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form">
+            <h3>Send a Message</h3>
+
+            <form id="contact-form">
+                <input type="text"
+                       name="name"
+                       placeholder="Your Name"
+                       required>
+
+                <input type="email"
+                       name="email"
+                       placeholder="Your Email"
+                       required>
+
+                <textarea name="message"
+                          placeholder="Your Message"
+                          rows="5"
+                          required></textarea>
+
+                <button type="submit">
+                    Send Message
+                    <i data-lucide="send"></i>
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<script>
+    lucide.createIcons();
+    </script>
 </body>
 </html>
