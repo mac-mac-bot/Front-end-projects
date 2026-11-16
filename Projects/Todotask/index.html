@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="hero">
+        <header class="header">
+            <span>My workspace</span>
+            <h1>To do list</h1>
+            <p>Stay focused. One task at a time.</p>
+        </header>
+
+        <img src="image.jpg" alt="To-do illustration">
+    </div> 
+    <div class="progress">
+        <div class="progress-header">
+            <h4>Progress</h4>
+            <span class="progress-text">0%</span>
+        </div>
+
+        <div class="progress-track">
+            <div class="progress-fill"></div>
+        </div>
+
+        <p>Tasks completed: 0/0</p>
+    </div>
+    <div class="task-input">
+        <h3>Add a new task</h3>
+
+        <div class="input-row">
+            <input
+                type="text"
+                id="task-input"
+                placeholder="What needs to be done?"
+                aria-label="New task"
+            >
+            <button type="button" id="add-btn">+ Add</button>
+        </div>
+
+        <ul class="task-list">
+            <!-- Tasks will be added here using JavaScript -->
+        </ul>
+    </div>
+</body>
+</html>
