@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather dashboard</h1>
+        <div class="search">
+            <form>
+                <input type="text" class="city-input" placeholder="Search for city">
+                <button class="search-icon" type="submit" aria-label="Searches city's weather">
+                    <img src="/Front-end-projects/Projects/Weather/assets/search.svg">
+                </button>
+            </form>
+        </div>
+    </header>
+    <div class="main">
+        <img src="assets/cloudy.svg" alt="Weather" id="weather-icon">
+        <span class="temperature" id="temperature">--°C</span>
+        <span class="condition" id="condition">--</span>
+        <span class="city" id="city-name">Search for a city</span>
+    </div>
+    
+<div class="cards">
+
+    <div class="weather-card-humidity">
+        <img class="card-icon" src="/Front-end-projects/Projects/Weather/assets/droplets.svg" alt="Humidity">
+        <span class="card-label">Humidity</span>
+        <span class="card-value" id="humidity">--%</span>
+    </div>
+
+    <div class="weather-card-wind-speed">
+        <img class="card-icon" src="/Front-end-projects/Projects/Weather/assets/wind.svg" alt="Wind Speed">
+        <span class="card-label">Wind Speed</span>
+        <span class="card-value" id="wind-speed">-- km/h</span>
+    </div>
+
+    <div class="weather-card-feels-like">
+        <img class="card-icon" src="/Front-end-projects/Projects/Weather/assets/thermometer.svg" alt="Feels Like">
+        <span class="card-label">Feels Like</span>
+        <span class="card-value" id="feels-like">--°C</span>
+    </div>
+
+    <div class="weather-card-cloud-cover">
+        <img class="card-icon" src="/Front-end-projects/Projects/Weather/assets/cloud-rain.svg" alt="Cloud Cover">
+        <span class="card-label">Cloud Cover</span>
+        <span class="card-value" id="cloud-cover">--%</span>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
