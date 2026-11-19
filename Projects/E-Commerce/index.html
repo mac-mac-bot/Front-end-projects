@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroMart | Electronics Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/electric-svgrepo-com.svg" alt="Logo">
+            <h1>Electro<span>Mart</span></h1>
+        </div>
+
+        <nav class="header-nav">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#deals">Deals</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="search">
+            <input type="search" placeholder="Search products..."
+                   class="search-bar" id="product-search"
+                   aria-label="Search products">
+        </div>
+
+        <div class="actions">
+            <a href="#wishlist" aria-label="Wishlist">
+                <img src="assets/heart-svgrepo-com.svg" alt="">
+            </a>
+            <button type="button" id="cart-toggle" aria-label="Open cart">
+                <img src="assets/cart-shopping-svgrepo-com.svg" alt="">
+                <span id="cart-count">0</span>
+            </button>
+            <a href="#profile" aria-label="Profile">
+                <img src="assets/profile-round-1342-svgrepo-com.svg" alt="">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Banner -->
+        <section class="hero" id="home">
+            <img src="assets/Page.jpeg"
+                 alt="Upgrade your tech with ElectroMart"
+                 class="hero-image">
+        </section>
+
+        <!-- Categories -->
+        <section class="categories-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">EXPLORE OUR COLLECTION</p>
+                    <h2>Shop by Category</h2>
+                </div>
+            </div>
+
+            <div class="category-list" id="category-list">
+                <button class="category-btn active" data-category="all">
+                    <span>✦</span> All Products
+                </button>
+                <button class="category-btn" data-category="mobiles">
+                    <span>📱</span> Mobiles
+                </button>
+                <button class="category-btn" data-category="laptops">
+                    <span>💻</span> Laptops
+                </button>
+                <button class="category-btn" data-category="audio">
+                    <span>🎧</span> Audio
+                </button>
+                <button class="category-btn" data-category="accessories">
+                    <span>⌚</span> Accessories
+                </button>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="products-section" id="products">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">HANDPICKED FOR YOU</p>
+                    <h2>Our Products</h2>
+                </div>
+
+                <select id="sort-products" aria-label="Sort products">
+                    <option value="default">Sort: Featured</option>
+                    <option value="low-high">Price: Low to High</option>
+                    <option value="high-low">Price: High to Low</option>
+                    <option value="name">Name: A to Z</option>
+                </select>
+            </div>
+
+            <div class="shop-layout">
+                <div class="product-grid" id="product-grid">
+
+                    <article class="product-card" data-id="1"
+                             data-category="mobiles" data-price="24999">
+                        <div class="product-image">
+                            <span class="product-badge">Popular</span>
+                            <img src="https://placehold.co/360x260/1E293B/A78BFA?text=Smartphone+X"
+                                 alt="Smartphone X">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-category">Mobiles</p>
+                            <h3>Smartphone X</h3>
+                            <p class="rating">★★★★★ <span>(4.8)</span></p>
+                            <p class="product-price">₹24,999</p>
+                            <button class="add-to-cart" data-id="1">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-id="2"
+                             data-category="laptops" data-price="59999">
+                        <div class="product-image">
+                            <span class="product-badge">Best Seller</span>
+                            <img src="https://placehold.co/360x260/1E293B/A78BFA?text=Laptop+Pro"
+                                 alt="Laptop Pro">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-category">Laptops</p>
+                            <h3>Laptop Pro</h3>
+                            <p class="rating">★★★★★ <span>(4.9)</span></p>
+                            <p class="product-price">₹59,999</p>
+                            <button class="add-to-cart" data-id="2">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-id="3"
+                             data-category="audio" data-price="3499">
+                        <div class="product-image">
+                            <img src="https://placehold.co/360x260/1E293B/A78BFA?text=Wireless+Headphones"
+                                 alt="Wireless Headphones">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-category">Audio</p>
+                            <h3>Wireless Headphones</h3>
+                            <p class="rating">★★★★☆ <span>(4.5)</span></p>
+                            <p class="product-price">₹3,499</p>
+                            <button class="add-to-cart" data-id="3">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-id="4"
+                             data-category="accessories" data-price="6999">
+                        <div class="product-image">
+                            <span class="product-badge">New</span>
+                            <img src="https://placehold.co/360x260/1E293B/A78BFA?text=Smartwatch"
+                                 alt="Smartwatch">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-category">Accessories</p>
+                            <h3>Smartwatch</h3>
+                            <p class="rating">★★★★☆ <span>(4.6)</span></p>
+                            <p class="product-price">₹6,999</p>
+                            <button class="add-to-cart" data-id="4">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-id="5"
+                             data-category="mobiles" data-price="18999">
+                        <div class="product-image">
+                            <img src="https://placehold.co/360x260/1E293B/A78BFA?text=Galaxy+Lite"
+                                 alt="Galaxy Lite">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-category">Mobiles</p>
+                            <h3>Galaxy Lite</h3>
+                            <p class="rating">★★★★☆ <span>(4.4)</span></p>
+                            <p class="product-price">₹18,999</p>
+                            <button class="add-to-cart" data-id="5">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-id="6"
+                             data-category="accessories" data-price="1499">
+                        <div class="product-image">
+                            <img src="https://placehold.co/360x260/1E293B/A78BFA?text=Wireless+Mouse"
+                                 alt="Wireless Mouse">
+                        </div>
+                        <div class="product-details">
+                            <p class="product-category">Accessories</p>
+                            <h3>Wireless Mouse</h3>
+                            <p class="rating">★★★★☆ <span>(4.3)</span></p>
+                            <p class="product-price">₹1,499</p>
+                            <button class="add-to-cart" data-id="6">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Shopping Cart -->
+                <aside class="cart-panel" id="cart-panel">
+                    <div class="cart-heading">
+                        <h2>Shopping Cart</h2>
+                        <button id="close-cart" type="button"
+                                aria-label="Close cart">×</button>
+                    </div>
+
+                    <div class="cart-items" id="cart-items">
+                        <div class="empty-cart">
+                            <span>🛒</span>
+                            <p>Your cart is empty</p>
+                            <small>Add some products to get started!</small>
+                        </div>
+                    </div>
+
+                    <div class="cart-footer">
+                        <div class="cart-total">
+                            <span>Total</span>
+                            <strong id="cart-total">₹0</strong>
+                        </div>
+                        <button class="checkout-btn" id="checkout-btn">
+                            Proceed to Checkout
+                        </button>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Deals -->
+        <section class="deals-section" id="deals">
+            <div>
+                <p class="section-label">EXCLUSIVE OFFERS</p>
+                <h2>Discover Great Deals</h2>
+                <p>Explore our latest electronics and find your next upgrade.</p>
+            </div>
+            <a href="#products">Explore Products →</a>
+        </section>
+    </main>
+
+    <footer id="about">
+        <p>© 2026 ElectroMart. Built for learning and innovation.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
